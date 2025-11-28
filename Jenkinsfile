@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    
+    tools {
+        maven 'Maven'   // Must match the name you gave in Global Tool Configuration
+    }
 
     environment {
         IMAGE_NAME = "techmayu/spring-example"
